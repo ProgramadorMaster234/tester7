@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D´Alma</title>
+    <link rel="icon" href="logoo.jpg">
+ 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+         <a style="text-decoration: none;" href="index.html"><h1>D´Alma</h1></a>
+        </div>
+        <div class="navbar-links">
+          <a href="#">Menu</a>
+          <a href="#">Encomendar</a>
+          <a href="#">Informações</a>
+          <a href="#">Álbum</a>
+        </div>
+        <div class="hamburger">
+          <i style="color: white;" class="fas fa-bars"></i>
+        </div>
+      </div>
+
+     
+      <div class="banner">
+      <img src="banner.jpg" alt="">
+      </div>  
+
+
+      <script>
+        const hamburger = document.querySelector('.hamburger');
+        const links = document.querySelector('.navbar-links');
+      
+        hamburger.addEventListener('click', () => {
+          links.classList.toggle('active');
+        });
+      </script>
+</body>
+</html>
